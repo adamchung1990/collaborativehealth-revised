@@ -1,0 +1,1004 @@
+html, body {margin:0;padding:0;}
+
+body {
+  font-family: 'Open Sans', Arial, serif;
+  min-width: 320px;
+  color:#909090;
+}
+
+/* GENERAL STYLING */
+h2 {text-align: center;font-weight:300;margin:0;}
+p {text-align:center;}
+ul {list-style-type:none;padding:0;}
+a {text-decoration: none !important;}
+
+.rh-carousel ul {list-style-type: initial;}
+
+/* PSEUDO STATES */
+
+  /* NAVBAR */
+  .navbar-default .navbar-nav>li> a.active {
+    color:#b4d47e;
+  }
+
+  .navbar-default .navbar-nav>li> a:hover {
+    color:#b4d47e;
+    -webkit-transition: color .3s ease; 
+    -moz-transition: color .3s ease;
+    -ms-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    transition: color .3s ease;
+    cursor:pointer;
+  }
+
+  .navbar-default .navbar-nav>li> a:active {
+    color:#9ec065;
+  }
+
+  /* ICONS */
+  .icon-sections li:hover {background-color: #ace0f6;cursor:pointer;} 
+  .icon-sections li:active {background-color: #ace0f6;} 
+  .icon-sections li:hover p {color:white;}
+  .icon-sections li:active p {color:white;}
+
+  .icon-sections li:hover img {
+    -webkit-transform: translate3d(0,-5px,0);
+    -moz-transform: translate3d(0,-5px,0);
+  } 
+
+    /* EMPLOYEE BENEFITS CAMPAIGNS */
+    .employee-benefits-campaigns li:hover {background-color:rgb(95, 171, 218);}
+    .employee-benefits-campaigns li:active {background-color:rgb(95, 171, 218);}
+
+
+    /* TEAM */
+    .team .icon-sections li:hover {background-color: rgb(135, 187, 110);} 
+    .team .icon-sections li:active {background-color: rgb(135, 187, 110);} 
+  
+/* end HOVER STATES */
+
+
+/* NAVBAR */
+.navbar-default {
+  border:none;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+
+.navbar-toggle {padding: 9px 8px 12px;}
+.navbar-brand {padding: 5px 0 0 4px;}
+.navbar-brand p {color: #ABABAB;font-size: 20px;}
+.navbar-brand span {color: #A1C761;}
+.navbar-brand img, .navbar-brand p {display:inline;}
+.navbar-brand img {height:50px;}
+.navbar-default .navbar-toggle:hover {background-color:green;}
+.navbar {margin-bottom:0;height: 58px;}
+
+
+
+/* INTRO */
+.intro {
+  padding:90px 0 30px;
+  background:url(../images/main2.jpg) fixed;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+
+.intro img {width:100%;}
+
+.shadow {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding:10px;
+  color:white;
+}
+
+/* SECTIONS - GENERAL STYLING */
+section {padding:0 0 3rem;}
+
+.title {padding:3rem 0 1.5rem;}
+
+.line {
+  height:1px;
+  width:150px;
+  background-color: #ccc;
+  display:block;
+  margin:0 auto;
+}
+
+.product-description {margin:2rem 5% 1rem;}
+
+  /* ICON SECTIONS */
+  .icon-sections {
+    display:block;
+    margin:0 auto;
+    width:85%;
+    max-width:700px;
+  }
+  .icon-sections img {
+    display:block;
+    margin:0 auto;
+    width:85%;
+    max-width:150px;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition-duration: .4s;
+  }
+  .icon-sections li {
+    width:46%;
+    display:inline-block;
+    padding-top:1.5rem;
+    margin:0 2%;
+    border-radius:7px;
+    -webkit-transition-duration: .4s; 
+    -moz-transition-duration:.4s;
+    -ms-transition-duration: .4s;
+    -o-transition-duration: .4s;
+    transition-duration: .4s;
+  }
+  .icon-sections p {
+    margin:1rem 0;
+    color:#909090;
+    font-size:1.5rem;
+    -webkit-transition-duration: .4s; 
+    -moz-transition-duration:.4s;
+    -ms-transition-duration: .4s;
+    -o-transition-duration: .4s;
+    transition-duration: .4s;
+  }
+
+/* EMPLOYEE BENEFITS CAMPAIGNS */
+.employee-benefits-campaigns {background-color:rgb(101, 184, 228);}
+.employee-benefits-campaigns p {color:white;}
+.employee-benefits-campaigns .title {color:white;}
+
+/* RAPIDHEALTH PLUS BENEFITS */
+.rapidhealth-benefits .icon-sections {max-width:550px;}
+
+/* TEAM */
+.team {background-color:#98CA80;}
+.team p {color:white;}
+.team .title {color:white;}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width:600px) {
+  .rapidhealth .icon-sections li,
+  .team .icon-sections li {width:30%;margin:1.66666666667%;}
+}
+
+
+@media (min-width:800px) {
+  .employee-benefits-campaigns .icon-sections li {width:23%;margin:1%;}
+}
+
+/* CAROUSELS */
+  
+  /* CAROUSEL CONTAINER & CONTROLS */
+
+    /* CONTAINER */
+
+    .modal-lg {
+      width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top:10px;
+    }
+
+    @media (max-width:1000px) {
+      .modal-lg {
+        width:auto;
+        margin-top:0px;
+      }
+    }
+
+    .carousel-top {
+      height:50px;
+      width:100%;
+      background-color: #ececec;
+    }
+
+    .close {
+      position:relative;
+      margin-right: 20px;
+      margin-top: 15px;
+      z-index:100;
+      color:#999;
+      opacity: 1;
+      text-shadow:none;
+      font-weight: 500;
+    }
+
+    .close:active {
+      color:#bababa;
+    }
+
+    .carousel {
+      height: auto;
+    }
+
+    .modal-content {
+      -webkit-box-shadow: 0 3px 60px rgba(0,0,0,.3);
+      box-shadow: 0 3px 60px rgba(0,0,0,.3);
+      border:none;
+    }
+
+    .team-carousel .modal-content {
+      height:auto;
+    }
+
+
+    @media (max-width:1000px) {
+      .team-carousel .modal-content {
+        height:auto;
+      }
+    }
+
+      /* TEAM CONTAINER */
+      .team-carousel .carousel-inner {
+        height:auto;
+      }
+
+      .team-carousel .carousel {
+        height:auto;
+      }
+
+      .bio {
+        width:810px;
+        background-color: gray;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+      }
+
+      .photo-container {
+        width:364px;
+        float:left;
+      }
+
+      .bio-container {
+        width:350px;
+        float:left;
+      }
+
+      .bio img {
+        margin-top: 60px;
+        margin-left:36px;
+      }
+
+      .bio-container .name {
+        margin-top:80px;
+        color:#828282;
+      }
+
+      .bio-container .title {
+        color:#98ca70;
+      }
+
+      .bio-container {
+        font-size:20px;
+      }
+
+      .bio-container .description {
+        font-size:15px;
+        color:#a4a4a4;
+        text-align: justify;
+      }
+
+      .education {
+        color: #a4a4a4;
+        font-size:15px;
+        margin-bottom:18px;
+      }
+
+      #italics {
+        font-style: italic;
+      }
+
+      .bio-expanded {
+        font-size:15px;
+        color:#a4a4a4;
+        text-align: justify;
+        background-color: white;
+        margin-bottom: 10px;
+      }
+
+      .bio-read-more a {
+        font-size:15px;
+        color: #77b8d7;
+      }
+
+      /* responsive */
+
+      @media (max-width:1200px) {
+        .bio-container {
+          width:300px;
+        }
+
+        .bio-container .name {600
+          margin-bottom:0px;
+        }
+
+        .bio-container .description {
+          font-size:15px;
+        }
+
+      }
+
+      @media (max-width:768px) {
+        .bio {
+          width:100%;
+        }
+
+        .bio .photo-container {
+          display:block;
+          width:100%;
+          margin-left:auto;
+          margin-right:auto;
+        }
+
+        .bio img {
+          margin-top: 0px;
+          display:block;
+          margin-left:auto;
+          margin-right:auto;
+        }
+
+        .bio-container {
+          width:100%;
+          display:block;
+          margin-left:auto;
+          margin-right:auto;
+        }
+
+        .bio-container .name {
+          margin-top:0px;
+          margin-bottom:0px;
+          text-align: center;
+        }
+
+        .bio-container .title {
+          text-align:center;
+        }
+
+        .bio-container .description {
+          width:80%;
+          display:block;
+          margin-left:auto;
+          margin-right:auto;
+          font-size:15px;
+        }
+
+        .education {
+          text-align:center;
+          max-width: 300px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .bio-expanded {
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+          font-size: 15px;
+        }
+
+        .bio-read-more {
+          width: 80%;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          font-size: 15px;
+        }
+
+      }
+
+
+    /* ARROWS */
+    .carousel-control {
+      top:200px;
+      height:60px;
+      opacity:.8;
+    }
+
+    .rh-carousel .carousel-control {
+      top: 40px;
+      width:50%;
+    }
+
+    .rh-carousel .carousel-control img {
+      height:60px;
+    }
+
+    .carousel-control.right {
+      background-image: none;
+    }
+
+    .carousel-control.left {
+      background-image: none;
+    }
+
+    /* DOTS */
+
+    .rh-carousel .carousel-indicators {
+      position:relative;
+      top:14px;
+    }
+
+    .carousel-indicators {
+      position:relative;
+      top:20px;
+    }
+
+    .team-carousel .carousel-indicators {
+      padding-bottom: 60px;
+    }
+
+    .carousel-indicators .active {
+      margin:15px;
+      width:8px;
+      height:8px;
+      background-color:#98ca70;
+    }
+
+    .carousel-indicators li {
+      background-color:#d6d6d6;
+      border:none;
+      width:8px;
+      height:8px;
+      margin:15px;
+    }
+
+    .carousel-indicators li:hover {
+      background-color: #98ca70;
+    }    
+
+          
+
+  
+  /* end CAROUSEL CONTAINER & CONTROLS */
+
+  /* CAROUSEL CONTENT */
+
+    /* TITLE */
+    .carousel-title p {
+      font-size: 30px;
+      text-align:center;
+      color: #b8b8b8;
+    }
+
+    .carousel-title {
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      width: 230px;
+      border-bottom: 1px solid #e8e8e8;
+      padding-top: 18px;
+    }
+
+    .slide-number {
+      text-align:center;
+      margin-top:15px;
+      font-size:18px;
+      color:#9dc67f;
+    }
+
+    /* SCREENSHOT CONTAINER */
+    .rh-carousel .container {
+      padding-left:0px;
+      padding-right:0px;
+      width:auto;
+    }
+
+    .screenshot-title {
+      font-size:25px;
+      color: #b8b8b8;
+      text-align: center;
+      margin-top:10px;
+    }
+
+    .screenshot-container {
+      width: 100%;
+      margin-top:10px;
+      margin-bottom: 15px;
+    }
+
+    .screenshot-container img {
+      max-width: 500px;
+      margin-top: 15px;
+    }
+
+
+    @media (max-width:768px) {
+      .screenshot-title {
+        font-size:21px;
+        margin-top:25px;
+        margin-bottom:15px;
+      }
+    }
+
+
+    .video-container {
+      max-width: 600px;
+      display: block;
+      margin: 15px auto;
+    }
+
+    video {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .screenshot-container img {
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    #delightful1-image {
+      max-height:336px;
+      max-width:600px;
+    }
+
+    #delightful2-image {
+      max-width:450px;
+    }
+
+    #delightful3-image {
+      max-width:600px;
+    }
+
+    #simple1-image {
+      max-height:449px;
+      max-width:550px;
+    }
+
+    #simple2-image {
+      max-height:424px;
+      max-width:550px;
+    }
+
+    #simple3-image {
+      max-height: 621px;
+      max-width:410px;
+    }
+
+    #simple4-image {
+      max-height: 362px;
+      max-width:600px;
+    }
+
+    .powerful-screenshot {
+      max-height: 410px;
+      max-width:580px;
+    }
+
+    #tailored-image {
+      max-height: 566px;
+      max-width:600px;
+    }
+
+    .description-container {
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      color:black;
+      margin-top:25px;
+    }
+
+
+    /* SUBTITLE */
+    .highlight {
+      color:#9ec77d;
+    }
+
+    /*BULLET POINTS */
+    .bullet-outer-container {
+      width:100%;
+      background-color: #9ec77d;
+      border-top: 4px solid #e2e2e2;
+    }
+
+    .bullet-container {
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 450px;
+    }
+
+    .bullet-points {
+      padding-top: 20px;
+      padding-bottom:20px;
+      color: white;
+      font-size: 17px;
+      width: 100%;
+      background-color: #9ec77d;
+      margin-bottom:0px;
+    }
+    /* end BULLET POINTS */
+
+    /* READ MORE BUTTON */
+    .read-more {
+      width:100%;
+      background-color: #9ec77d;
+      margin-left:auto;
+      margin-right: auto;
+      padding-top: 10px;
+      padding-bottom:30px;
+    }
+
+    .read-more .btn-lg {
+      display:block;
+      margin-right: auto;
+      margin-left: auto;
+      box-shadow: none;
+    }
+
+    .read-more .btn-primary {
+      background-color: #9dc67f;
+      border: 1.5px solid white;
+      width:200px;
+    }
+
+    .read-more .btn-lg:hover {
+      background-color: white;
+      color:#9dc67f;
+    }
+
+    .read-more .btn-lg:active {
+      background-color: white;
+      color:#9dc67f;
+    }
+
+    #read-more-overwrite {
+      background-color: #9dc67f; 
+      color: white;
+      border: 1.5px solid white; 
+      display:block;
+      margin-right: auto;
+      margin-left: auto;
+      box-shadow: none;
+      width:200px;
+    }
+
+    #read-more-overwrite:hover {
+      background-color: white;
+      color:#9dc67f;
+    }
+
+    /* READ MORE CONTENT EXPANDED */
+    .panel-body {
+      color:white;
+      font-size:16px;
+      text-align:justify;
+      width:500px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top:0px;
+    } 
+    .panel-collapse.green {
+      background-color: #9ec77d;
+      width:100%;
+    }
+
+    /* SPECIFIC CAROUSEL STYLING */
+      /* SIMPLE SMALL CLEAR STEPS*/
+      #small-steps-bullets .bullet-container {
+        width: 500px;
+      }
+
+      @media (max-width:550px) {
+        #small-steps-bullets .bullet-container {
+          width: 300px;
+        }
+      } 
+
+      /* DELIGHTFUL */
+      #delightful-2 {
+        margin-bottom: 20px;
+      }
+
+      /* POWERFUL */
+      #carousel-powerful .screenshot-title {
+        font-size:21px;
+        margin-top:10px;
+      }
+
+      #subtitle-container {
+        margin-top:35px;
+      }
+
+      #subtitle-container #subtitle {
+        text-align: center;
+        padding-top:25px;
+        width:580px;
+        font-size:19px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-top: 1px solid #d9d9d9;
+        margin-bottom:0px;
+      }
+
+      #caption {
+        text-align: center;
+        width: 500px;
+        font-size: 20px;
+        color: #949494;
+        font-style: italic;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+        /* READ MORE BUTTON */
+        #carousel-powerful .read-more {
+          background-color: white;
+        }
+
+        #carousel-powerful .read-more .btn-primary {
+          border: none;
+        }
+
+        #carousel-powerful .read-more .btn-lg:hover {
+          background-color: #89b566;
+          color:white;
+        }
+
+        #carousel-powerful .read-more .btn-lg:active {
+          background-color: #89b566;
+          color:white;
+        }
+
+        /* READ MORE CONTENT EXPANDED */
+        #carousel-powerful .panel-body {
+          color:gray;
+          background-color: white;
+        } 
+
+        #carousel-powerful .panel-collapse {
+          width:100%;
+          background-color: white;
+        }   
+
+      /* TAILORED */
+      #carousel-tailored .screenshot-title {
+        margin-top:20px;
+      }
+  /* end CAROUSEL CONTENT */
+
+/* end CAROUSELS */
+
+
+/* RESPONSIVE CSS FOR CAROUSELS */
+  
+  /* RH CAROUSEL CONTENT */
+  @media (max-width:550px) {
+    .bullet-container {  
+      width: 300px;
+    }
+
+    .bullet-points {
+      font-size: 16px;
+    }
+
+    .panel-body {
+      width:300px;
+      font-size:14px;
+    }
+  }
+
+
+
+  @media (max-width:768px) {
+    .modal-content {
+      border:none;
+    }
+
+    .team-carousel .carousel {
+      height:auto;
+    }
+
+    .team-carousel .carousel-inner {
+      height:auto;
+    }
+
+    .team-carousel .carousel-control {
+      top: 150px;
+    }
+
+    .team-carousel .carousel-control img {
+      height:60px;
+    }
+
+    .carousel-indicators {
+      bottom:240px;
+    }
+
+    .carousel-indicators li {
+      margin:9px;
+    }
+
+    .carousel-indicators .active {
+      margin:9px;
+    }
+
+    .team-carousel .carousel-indicators {
+      bottom:0px;
+
+    }
+
+    #seven-dot-carousel {
+      width: 70%;
+      margin-left: -35%;
+    }
+      
+    .carousel-inner .container {
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 10px;
+    }
+
+    .rh-carousel .carousel-control {
+      top: 72px;
+      width:40%;
+      height:40px;
+    }
+
+    .rh-carousel .carousel-control img {
+      height:40px;
+    }
+
+    .screenshot-container {
+      width:95%;
+      display:block;
+      margin-left:auto;
+      margin-right: auto;
+    }
+
+
+    .screenshot-container img{
+      width:100%;
+    }
+
+    .screenshot-container #checklist-image {
+      height:200px;
+      width:auto;
+    }
+
+    /* SPECIFIC STYLING FOR INDIVIDUAL CAROUSELS */
+    #carousel-simple #checklist-title {
+      margin-top:25px;
+    }
+  }
+
+  @media (max-width:500px) {
+    /* SPECIFIC STYLING FOR INDIVIDUAL CAROUSELS */
+    #carousel-simple #screens-title {
+      font-size:16px;
+    }
+
+  } 
+
+    @media (max-width:768px) {
+
+    #carousel-powerful .screenshot-container {
+      height: auto;
+      width: 90%;
+    }
+
+    #subtitle-container #subtitle {
+      width:500px;
+      text-align:center;
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    #caption {
+      width:90%;
+    }
+
+  }
+
+  @media (max-width:500px) {
+
+    .carousel-title p {
+      font-size:25px;
+    }
+
+    .screenshot-title {
+      font-size:20px;
+    }
+
+
+    #carousel-powerful .screenshot-title {
+      margin-top: 24px;
+      font-size: 17px;
+      width:95%;
+      text-align:center;
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    #subtitle-container {
+      margin-top: 5px;
+    }
+
+    #subtitle-container #subtitle {
+        font-size:15px;
+        width:90%;
+      }
+
+    #caption {
+      font-size: 15px;
+    }
+
+  } 
+
+/* end RESPONSIVE CSS FOR CAROUSELS */
+
+
+
+
+
+
+
+
+
+
+
+/* ANIMATIONS */
+
+@keyframes line-animate {
+      from {
+          width:0px;
+      }
+      to {
+          width:150px;
+      }
+}
+@-moz-keyframes line-animate { /* Firefox */
+    from {
+        width:0px;
+    }
+    to {
+        width:150px;
+    }
+}
+@-webkit-keyframes line-animate { /* Safari and Chrome */
+    from {
+        width:0px;
+    }
+    to {
+        width:150px;
+    }
+}
+@-o-keyframes line-animate { /* Opera */
+    from {
+        width:0px;
+    }
+    to {
+        width:150px;
+    }
+}
+
+
+.line-animate {
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-name: line-animate;
+    animation-name: line-animate;
+}
+
+
