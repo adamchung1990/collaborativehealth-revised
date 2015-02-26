@@ -15,6 +15,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
+
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -43,7 +44,7 @@
         <div class="container">
           <!-- LOGO -->
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle navigation</span>menu</button>
+            <button type="button" class="navbar-toggle" id="selected" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle navigation</span>menu</button>
             <a data-scroll class="navbar-brand" href="#home">
               <img src="images/logo1.png" />
               <p>collaborative<span>health</span></p>
@@ -55,13 +56,13 @@
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown"><a class="dropdown-toggle" data-toggle= "dropdown" href="#">products<b class="caret"></b></a data-toggle="collapse" data-target=".navbar-collapse" data-scroll id="link1" href="index.html#rapidhealth-section">
                   <ul class="dropdown-menu">
-                      <li><a href="#">RapidHealth</a></li>
-                      <li><a href="#">Employee benefits campaigns</a></li>
-                      <li><a href="#">RapidHealth + Benefits</a></li>
+                      <li><a href="#rapidhealth">RapidHealth</a></li>
+                      <li><a href="#employee-benefits-campaigns">Employee benefits campaigns</a></li>
+                      <li><a href="#rapidhealth-benefits">RapidHealth + Benefits</a></li>
                   </ul>
               </li>
-              <li><a data-toggle="collapse" data-target=".navbar-collapse" data-scroll id="link2" href="index.html#team-section">team</a></li>
-              <li><a data-toggle="collapse" data-target=".navbar-collapse" data-scroll id="link3" href="index.html#contact-section">contact</a></li>
+              <li><a data-toggle="collapse" data-target=".navbar-collapse" data-scroll id="link2" href="#team">team</a></li>
+              <li><a data-toggle="collapse" data-target=".navbar-collapse" data-scroll id="link3" href="#contact">contact</a></li>
               <li class="dropdown"><a class="dropdown-toggle" data-toggle= "dropdown" href="#">resources<b class="caret"></b></a>
                   <ul class="dropdown-menu">
                       <li><a href="routing-employee-wellness-essentials.html">Employee wellness essentials</a></li>
@@ -76,16 +77,27 @@
 </div>  
 <!--end NAVBAR -->
 
-<section class="intro">
+<div class="link-position" id="home"></div>
+<section class="intro" data-stellar-background-ratio="0.5">
   <div class="shadow">
-    <li>RapidHealth: mobile/online employee wellness service that actually works</li>
-    <li>Employee benefits campaigns:  cost-effectively promote all your benefits</li>
-    <li>“RapidHealth + Benefits”: wellness service WITH employee benefits campaigns</li>
-    <img src="images/intro-screenshot2.png" />
+    <div class="intro-container">
+      <div class="copy-container">
+        <h1 class="intro-header fadeindown" >Our Services</h1>
+        <div class="wow line-animate line" id="intro-line"></div>
+        <ul class="intro-info fadeinup">
+          <li><b>RapidHealth:</b> mobile/online employee wellness service that actually works</li>
+          <li><b>Employee benefits campaigns:</b>  cost-effectively promote all your benefits</li>
+          <li><b>“RapidHealth + Benefits”:</b> wellness service WITH employee benefits campaigns</li>
+        </ul>
+      </div>
+      <img class="fadein" src="images/intro-screenshot2.png" />
+    </div>
   </div>
 </section>
 
+<div class="link-position" id="rapidhealth"></div>
 <section class="rapidhealth">
+<div class="container">
   <h2 class="title">RapidHealth</h2>
   <div class="wow line-animate line"></div>
   <p class="product-description">Product description. Click on the icons below to learn more!</p>
@@ -98,34 +110,42 @@
     </li><li data-toggle="modal" data-target=".tailored"><img src="images/rh-tailored.png" /><p>Tailored</p>
     </li>
   </ul>
-
+</div>
 </section>
 
+<div class="link-position" id="employee-benefits-campaigns"></div>
 <section class="employee-benefits-campaigns">
+<div class="container">
   <h2 class="title">Employee Benefits Campaigns</h2>
   <div class="wow line-animate line" style="background-color:white"></div>
   <p class="product-description">Product description. Click on the icons below to learn more!</p>
   <ul class="icon-sections">
-    <li data-toggle="modal" data-target=".how-it-helps"><img src="images/rh-how-it-helps.png" /><p>What you get</p>
-    </li><li data-toggle="modal" data-target=".simple"><img src="images/rh-simple.png" /><p>Engaging emails</p>
-    </li><li data-toggle="modal" data-target=".powerful"><img src="images/rh-powerful.png" /><p>Action-triggering webpages</p>
-    </li><li data-toggle="modal" data-target=".delightful"><img src="images/rh-delightful.png" /><p>What'll you get</p>
+    <li data-toggle="modal" data-target=".what-you-get"><img src="images/rh-what-you-get.png" /><p>What you get</p>
+    </li><li data-toggle="modal" data-target=".engaging-emails"><img src="images/rh-email.png" /><p>Engaging emails</p>
+    </li><li data-toggle="modal" data-target=".action-webpages"><img src="images/rh-action-web.png" /><p>Action webpages</p>
+    </li><li data-toggle="modal" data-target=".what-will-you-get"><img src="images/rh-star.png" /><p>What'll you get</p>
     </li>
   </ul>
+</div>
 </section>
 
+<div class="link-position" id="rapidhealth-benefits"></div>
 <section class="rapidhealth-benefits">
+<div class="container">
   <h2 class="title">RapidHealth + Benefits</h2>
   <div class="wow line-animate line"></div>
   <p class="product-description">Product description. Click on the icons below to learn more!</p>
   <ul class="icon-sections">
-    <li data-toggle="modal" data-target=".how-it-helps"><img src="images/rh-how-it-helps.png" /><p>What it is</p>
-    </li><li data-toggle="modal" data-target=".simple"><img src="images/rh-simple.png" /><p>What you'll get</p>
+    <li data-toggle="modal" data-target=".what-it-is"><img src="images/rh-what-you-get.png" /><p>What it is</p>
+    </li><li data-toggle="modal" data-target=".what-will-you-get2"><img src="images/rh-star.png" /><p>What you'll get</p>
     </li>
   </ul>
+</div>
 </section>
 
+<div class="link-position" id="team"></div>
 <section class="team">
+<div class="container">
   <h2 class="title">Meet the Team</h2>
   <div class="wow line-animate line" style="background-color:white"></div>
   <p class="product-description">Product description. Click on the icons below to learn more!</p>
@@ -137,9 +157,50 @@
     </li><li data-toggle="modal" data-target=".board"><img src="images/team-board.png" /><p>Board</p>
     </li>
   </ul>
+</div>
 </section>
 
+<div class="link-position" id="contact"></div>
+<section class="contact">
+<div class="container">
+  <h2 class="title">Contact Us!</h2>
+  <div class="wow line-animate line"></div>
 
+  <form accept-charset="UTF-8" action="https://rapidhealth.com/external/ch-contact-form" data-remote="true" id="contact-form" method="post">
+    <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" />
+      <input name="authenticity_token" type="hidden" value="0IDzIe/wjflHLzebxtjBF0yrKmO7f4GHYZUXEmJk6Pc=" />
+    </div>
+    <ol>
+      <li>
+        <label>name</label>
+        <input type="text" name="name">
+      </li>
+      <li>
+        <label>e-mail</label>
+        <input type="text" name="email">
+      </li>
+      <li>
+        <label>phone</label>
+        <input type="text" name="phone">
+      </li>
+      <li>
+        <label>your message</label>
+        <textarea name="message"></textarea>
+      </li>
+      <li>
+        <button type="submit">Send it!</button>
+      </li>
+    </ol>
+  </form>
+</div>
+</section>
+<!-- end CONTACT -->
+
+<!--FOOTER -->
+<section class="footer">
+  <small>© 2015 CollaborativeHealth.</small>
+</section>
+<!-- end FOOTER -->
 
 
 
@@ -183,7 +244,7 @@
                 <!-- SCREENSHOT -->
                 <div class="container">        
                   <div class="screenshot-container">
-                    <img src="images/health-core.jpg" />
+                    <img src="images/carousel-rh/health-core.jpg" />
                   </div>          
                 </div><!-- end SCREENSHOT -->
 
@@ -216,7 +277,7 @@
                 <!-- SCREENSHOT -->
                 <div class="container" id="delightful-2">                 
                   <div class="screenshot-container">
-                    <img src="images/productivity.jpg" />
+                    <img src="images/carousel-rh/productivity.jpg" />
                   </div>
                 </div><!-- end SCREENSHOT -->
 
@@ -251,7 +312,7 @@
                 <!-- SCREENSHOT -->
                 <div class="container">                
                   <div class="screenshot-container">
-                    <img src="images/apple-donut.jpg" />
+                    <img src="images/carousel-rh/apple-donut.jpg" />
                   </div>                 
                 </div><!-- end SCREENSHOT -->
 
@@ -359,7 +420,7 @@
                 <!-- SCREENSHOT -->
                 <div class="container" id="delightful-2">                 
                   <div class="screenshot-container">
-                    <img id="delightful2-image" src="images/delightful2.jpg" />
+                    <img id="delightful2-image" src="images/carousel-rh/delightful2.jpg" />
                   </div>
                   <p id="caption">"First you must admit you have a problem."</p>            
                 </div><!-- end SCREENSHOT -->
@@ -392,7 +453,7 @@
                 <!-- SCREENSHOT -->
                 <div class="container">                
                   <div class="screenshot-container">
-                    <img id="delightful3-image" src="images/delightful3.jpg" />
+                    <img id="delightful3-image" src="images/carousel-rh/delightful3.jpg" />
                   </div>                 
                 </div><!-- end SCREENSHOT -->
 
@@ -423,7 +484,7 @@
                 <!-- SCREENSHOT -->
                 <div class="container">                
                   <div class="screenshot-container">
-                    <img src="images/contest.jpg" />
+                    <img src="images/carousel-rh/contest.jpg" />
                   </div>                 
                 </div><!-- end SCREENSHOT -->
 
@@ -496,7 +557,7 @@
                 <!-- SCREENSHOT -->
                 <div class="container">
                   <div class="screenshot-container">
-                    <img id="simple1-image" src="images/simple1.jpg" />
+                    <img id="simple1-image" src="images/carousel-rh/simple1.jpg" />
                   </div>    
                 </div><!-- end SCREENSHOT -->
 
@@ -528,7 +589,7 @@
                 <!-- SCREENSHOT -->
                 <div class="container">
                   <div class="screenshot-container">
-                    <img id="simple2-image" src="images/simple2.jpg" />
+                    <img id="simple2-image" src="images/carousel-rh/simple2.jpg" />
                   </div>   
                 </div><!-- end SCREENSHOT -->
 
@@ -562,7 +623,7 @@
                 <!-- SCREENSHOT -->
                 <div class="container">
                   <div class="screenshot-container">
-                    <img src="images/ideas-for-you.jpg" />
+                    <img src="images/carousel-rh/ideas-for-you.jpg" />
                   </div>
                 </div><!-- end SCREENSHOT -->
 
@@ -594,7 +655,7 @@
                 <!-- SCREENSHOT -->
                 <div class="container">
                   <div class="screenshot-container" >
-                    <img src="images/actions-checklist.jpg" />
+                    <img src="images/carousel-rh/actions-checklist.jpg" />
                   </div>                  
                 </div><!-- end SCREENSHOT -->
 
@@ -627,7 +688,7 @@
                 <!-- SCREENSHOT -->
                 <div class="container">
                   <div class="screenshot-container">
-                    <img id="simple4-image" src="images/simple4.jpg" />
+                    <img id="simple4-image" src="images/carousel-rh/simple4.jpg" />
                   </div>
                 </div><!-- end SCREENSHOT -->
 
@@ -706,7 +767,7 @@
                   <!-- SCREENSHOT -->
 
                   <div class="screenshot-container">
-                    <img class="powerful-screenshot" src="images/cartoon-hotdog.jpg" />
+                    <img class="powerful-screenshot" src="images/carousel-rh/cartoon-hotdog.jpg" />
                   </div>
 
                   <!-- end SCREENSHOT -->
@@ -731,7 +792,7 @@
                   <!-- SCREENSHOT -->
 
                   <div class="screenshot-container">
-                    <img class="powerful-screenshot" src="images/cartoon-supermarket.jpg" />
+                    <img class="powerful-screenshot" src="images/carousel-rh/cartoon-supermarket.jpg" />
                   </div>
 
                   <!-- end SCREENSHOT -->
@@ -756,7 +817,7 @@
                   <!-- SCREENSHOT -->
 
                   <div class="screenshot-container">
-                    <img class="powerful-screenshot" src="images/cartoon-stress.jpg" />
+                    <img class="powerful-screenshot" src="images/carousel-rh/cartoon-stress.jpg" />
                   </div>
 
                   <!-- end SCREENSHOT -->
@@ -785,7 +846,7 @@
                 <!-- SCREENSHOT -->
                 <div class="container">
                   <div class="screenshot-container">
-                    <img src="images/personalization.jpg" />
+                    <img src="images/carousel-rh/personalization.jpg" />
                   </div>
                 </div><!-- end SCREENSHOT -->
 
@@ -955,7 +1016,7 @@
                   <!-- SCREENSHOT -->
 
                   <div class="screenshot-container">
-                    <img id="tailored-image" src="images/tailored.jpg" />
+                    <img id="tailored-image" src="images/carousel-rh/tailored.jpg" />
                   </div>
 
                   <!-- end SCREENSHOT -->
@@ -1019,7 +1080,7 @@
                   <!-- SCREENSHOT -->
 
                   <div class="screenshot-container">
-                    <img id="tailored-image" src="images/tailored.jpg" />
+                    <img id="tailored-image" src="images/carousel-rh/tailored.jpg" />
                   </div>
 
                   <!-- end SCREENSHOT -->
@@ -1056,6 +1117,728 @@
       </div>
       <!--end TAILORED -->
 
+      <!--WHAT YOU GET -->
+      <div class="modal fade what-you-get" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+
+        
+
+          <div class="modal-content">
+          
+          <!-- Carousel-->
+          <div id="carousel-what-you-get" class="carousel slide" data-interval="false">
+
+            <!--carousel top-->
+            <button type="button" class="close" data-dismiss="modal">x</button>
+            <!-- TITLE -->
+            <div class="carousel-title"><p>What you get</p></div>
+            <!-- Dots -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-what-you-get" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-what-you-get" data-slide-to="1"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              
+              <!--ITEM 1 -->
+              <div class="item active">
+
+                <p class="screenshot-title">We promote your <span class="highlight">employee benefits</span></p>
+
+                <!-- SCREENSHOT -->
+                <div class="container">        
+                  <div class="screenshot-container">
+                    <img src="images/carousel-rh/whatyouget1.png" />
+                  </div>          
+                </div><!-- end SCREENSHOT -->
+
+                <div class="bullet-outer-container">
+                  <div class="bullet-container">
+                    <ul class="bullet-points">
+                      <li>You pick the employee benefits you want promoted</li>
+                      <li>We study them</li>
+                      <li>We’ll use the right promotional strategy and tools (see next section)</li>
+                      <li>You’ll oversee with no heavy lifting and get the credit</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div id="readmorecollapse22" class="panel-collapse green collapse">
+                  <div class="panel-body">
+                    <p>You’ve spent a lot of time and money picking and providing employee benefits. Your goal is to attract, retain, and empower the best possible employees. But, as Metlife’s 2014 survey reports, 53% of employees “need more help understanding how their benefits work and how they help meet their needs” (Metlife, p.5).  The importance of employee benefits is growing:</p>
+                    <ul>
+                      <li>43% of employees agree that “Benefits are an important reason why I came to work for my employer,” up from 28% in 2012 (Metlife, p.2).</li>
+                      <li>50% agree that “Benefits are an important reason I remain with my employer,” up from 38% in 2012 (Metlife, p.2).</li>
+                    </ul>
+                    <p>Our promotional campaigns will increase your employee’s understanding, use, and appreciation of your benefits, resulting in a material  increase in your benefits ROI.</p>
+
+                  </div>
+                </div>
+                
+                <div class="read-more"><a data-toggle="collapse" class="btn btn-lg btn-primary" href="#readmorecollapse22" role="button">Read more!</a></div>
+
+              </div>
+
+              <!-- ITEM 2 -->
+              <div class="item">
+
+                <p class="screenshot-title">The <strong>right</strong> mix of <span class="highlight">promotion tools</span></p>
+
+                <!-- SCREENSHOT -->
+                <div class="container" id="delightful-2">                 
+                  <div class="screenshot-container">
+                    <img src="images/carousel-rh/whatyouget2.jpg" />
+                  </div>
+                </div><!-- end SCREENSHOT -->
+
+                <div class="bullet-outer-container">
+                  <div class="bullet-container" style="max-width:500px">
+                    <ul class="bullet-points">
+                      <li>Sophisticated, predictive analytics that provide a personalized employee experience</li>
+                      <li>Tailored, action-focused, and engaging website that is fully mobile</li>
+                      <li>Engaging, high-quality emails that trigger action</li>
+                      <li>Fun posters</li>
+                      <li>Engaging surveys</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div id="readmorecollapse23" class="panel-collapse green collapse">
+                  <div class="panel-body">
+                    <p>In today’s fast-paced, message crazy world, you need far more ammunition to promote your employee benefits than the typical internal benefits website and HR-produced emails. Most of your emails get ignored.  The typical benefits website is boring and time-consuming to maintain. Even with help from an internal communications team, it can’t compete with all the high-quality marketing messages bombarding your employees.</p>
+                    <p>We’ll help you mount a truly effective employee benefits campaigns. First, we offer a mix of high-quality tools (described above). Second, we use the mix of tools that will best fit your unique culture, employee population, and employee benefits. Third, we’ll measure and prove effectiveness.</p>
+                    <p>You’ll get the credit and do little heavy lifting.</p>
+                  </div>
+                </div>
+
+                 <div class="read-more"><a data-toggle="collapse" class="btn btn-lg btn-primary" href="#readmorecollapse23" role="button">Read more!</a></div>
+
+              </div>
+
+            </div> <!--end .carousel-inner -->
+
+
+            <!--Arrows -->
+
+            <a class="left carousel-control" href="#carousel-what-you-get" data-slide="prev"><img src="images/leftarrowgrey.png" /></a>
+            <a class="right carousel-control" href="#carousel-what-you-get" data-slide="next"><img src="images/rightarrowgrey.png" /></a>
+
+          </div><!-- end CAROUSEL -->
+          
+          </div>
+        </div>
+      </div>
+      <!--end WHAT YOU GET -->
+
+
+      <!--ENGAGING EMAILS -->
+      <div class="modal fade engaging-emails" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+
+          <div class="modal-content">
+          
+          <!-- Carousel-->
+          <div id="carousel-engaging-emails" class="carousel slide" data-interval="false">
+
+            <!--carousel top-->
+            <button type="button" class="close" data-dismiss="modal">x</button>
+            <!-- TITLE -->
+            <div class="carousel-title"><p>Engaging Emails</p></div>
+            <!-- Dots -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-engaging-emails" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-engaging-emails" data-slide-to="1"></li>
+              <li data-target="#carousel-engaging-emails" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              
+              <!--ITEM 1 -->
+              <div class="item active">
+
+                <p class="screenshot-title"><span class="highlight">Marketing-quality </span>emails</p>
+
+                <!-- SCREENSHOT -->
+                <div class="container">        
+                  <div class="screenshot-container">
+                    <img src="images/carousel-rh/engagingemails1.png" />
+                  </div>          
+                </div><!-- end SCREENSHOT -->
+
+                <div class="bullet-outer-container">
+                  <div class="bullet-container">
+                    <ul class="bullet-points">
+                      <li>Tailored to your company’s brand and personality</li>
+                      <li>Compelling and engaging subject lines that are “Have to open”</li>
+                      <li>Brief, witty, and inspiring messages</li>
+                      <li>Clear, effective calls-to-action </li>
+                      <li>Integrated into the fully mobile benefits website</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div id="readmorecollapse24" class="panel-collapse green collapse">
+                  <div class="panel-body">
+                    <p>To grab your employees’ attention, marketers spend billions of dollars each year to create and send high-quality marketing emails. The typical well-intended “benefits communication” email can’t compete; they are ignored or deleted. Our benefits promotion emails are game-changers. We make it easy for you to send personalized, engaging emails that get opened and trigger the actions you want. Our emails are marketing-quality – particularly because we use predictive analytics to personalize the messages and sophisticated marketing techniques.</p>
+                  </div>
+                </div>
+                
+                <div class="read-more"><a data-toggle="collapse" class="btn btn-lg btn-primary" href="#readmorecollapse24" role="button">Read more!</a></div>
+
+              </div>
+
+              <!-- ITEM 2 -->
+              <div class="item">
+
+                <p class="screenshot-title"><span class="highlight">Highly personalized</span> (Example 1)</p>
+
+                <!-- SCREENSHOT -->
+                <div class="container" id="delightful-2">                 
+                  <div class="screenshot-container">
+                    <img src="images/carousel-rh/engagingemails2.png" />
+                  </div>
+                </div><!-- end SCREENSHOT -->
+
+                <div class="bullet-outer-container">
+                  <div class="bullet-container" style="max-width:500px">
+                    <ul class="bullet-points">
+                      <li>This version is for a 25-year old not contributing to his 401K</li>
+                      <li>We use predictive analytics to personalize by age, interests, and many other categories</li>
+                      <li>Personalization of message substantially increases your influence</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div id="readmorecollapse25" class="panel-collapse green collapse">
+                  <div class="panel-body">
+                    <p>The 401K email above and the one in the next section [add link to the other section?]  show how we use predictive analytics and marketing-campaign quality creativity to send personalized, engaging, and action-triggering emails. These 2 sample emails trigger action by showing how much each employee’s personal 401k will appreciate over time, and by offering images that will appeal to each age group and gender. The version above is for a 25 year-old male. The next section shows the version for a 45 year-old.</p>
+                  </div>
+                </div>
+
+                 <div class="read-more"><a data-toggle="collapse" class="btn btn-lg btn-primary" href="#readmorecollapse25" role="button">Read more!</a></div>
+
+              </div>
+
+              <!-- ITEM 3 -->
+              <div class="item">
+
+                <p class="screenshot-title"><span class="highlight">Highly personalized</span> (Example 2)</p>
+
+                <!-- SCREENSHOT -->
+                <div class="container" id="delightful-2">                 
+                  <div class="screenshot-container">
+                    <img src="images/carousel-rh/engagingemails3.png" />
+                  </div>
+                </div><!-- end SCREENSHOT -->
+
+                <div class="bullet-outer-container">
+                  <div class="bullet-container" style="max-width:500px">
+                    <ul class="bullet-points">
+                      <li>This version is for a 45-year old not contributing to his 401K</li>
+                      <li>Predictive analytics make emails far more engaging and influential</li>
+                      <li>Notice the change in number and image from the similar email to the 25 year-old man in the prior example.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div id="readmorecollapse26" class="panel-collapse green collapse">
+                  <div class="panel-body">
+                    <p>The email above and the email in the prior section [add link to the other section?]  highlight how we use predictive analytics and marketing-campaign quality creativity to send personalized, engaging, and action-triggering emails. These 2 sample emails trigger action by showing how much each employee’s personal 401k will appreciate over time, and by offering images that will appeal to each age group and gender. The version above is for a 45 year-old male. The previous section shows the version for a 25 year-old male.</p>
+                  </div>
+                </div>
+
+                 <div class="read-more"><a data-toggle="collapse" class="btn btn-lg btn-primary" href="#readmorecollapse26" role="button">Read more!</a></div>
+
+              </div>
+
+            </div> <!--end .carousel-inner -->
+
+
+            <!--Arrows -->
+
+            <a class="left carousel-control" href="#carousel-engaging-emails" data-slide="prev"><img src="images/leftarrowgrey.png" /></a>
+            <a class="right carousel-control" href="#carousel-engaging-emails" data-slide="next"><img src="images/rightarrowgrey.png" /></a>
+
+          </div><!-- end CAROUSEL -->
+          
+          </div>
+        </div>
+      </div>
+      <!--end ENGAGING EMAILS -->
+
+      <!--ACTION WEBPAGES-->
+      <div class="modal fade action-webpages" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+
+          <div class="modal-content">
+          
+          <!-- Carousel-->
+          <div id="carousel-action-webpages" class="carousel slide" data-interval="false">
+
+            <!--carousel top-->
+            <button type="button" class="close" data-dismiss="modal">x</button>
+            <!-- TITLE -->
+            <div class="carousel-title"><p>Action Web Pages</p></div>
+            <!-- Dots -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-action-webpages" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-action-webpages" data-slide-to="1"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              
+              <!--ITEM 1 -->
+              <div class="item active">
+
+                <p class="screenshot-title">Webpages that <span class="highlight">trigger action</span></p>
+
+                <!-- SCREENSHOT -->
+                <div class="container">        
+                  <div class="screenshot-container">
+                    <img src="images/carousel-rh/actionwebpages1.png" />
+                  </div>          
+                </div><!-- end SCREENSHOT -->
+
+                <div class="bullet-outer-container">
+                  <div class="bullet-container">
+                    <ul class="bullet-points">
+                      <li>We organize your benefits from the employee’s perspective.</li>
+                      <li>Employees get:</li>
+                      <li>One stop for everything they need in specific areas like Elder Care not just a summary of your benefits</li>
+                      <li>Helpful tips and resources that supplement your benefits</li>
+                      <li>You get: Greater benefits usage and more productive employees</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div id="readmorecollapse27" class="panel-collapse green collapse">
+                  <div class="panel-body">
+                    <p>Unfortunately, the typical employee benefits website is not sufficiently clear and engaging. This is a missed opportunity and problem because, as Metlife’s 2014 survey reports, 53% of employees “need more help understanding how their benefits work and how they help meet their needs” (Metlife, p.5).  Of all the education and communications options for “selecting and enrolling in benefits”, employees picked a “benefits website” as the most helpful (Metlife, p.17).</p>
+                    <p>Plus, employers typically organize the communications of benefits from the employer’s perspective, not from the employees’ perspective. If you scrutinize the sections in the Elder Care page above, you’ll see that we offer employees a single resource for successfully helping their aging loved ones – not just a summary of your elder care benefits.</p>
+                    <p>Don’t feel bad if your website is not great. Creating an engaging website is expensive and a ton of work. We’ve solved this problem. We can provide you a fully mobile, engaging employee benefits website for less than the cost of creating one yourself. Instead of you spending weeks creating it and then many days updating it, we’ll do all the heavy lifting. You oversee and get the credit.</p>
+                  </div>
+                </div>
+                
+                <div class="read-more"><a data-toggle="collapse" class="btn btn-lg btn-primary" href="#readmorecollapse27" role="button">Read more!</a></div>
+
+              </div>
+
+              <!-- ITEM 2 -->
+              <div class="item">
+
+                <p class="screenshot-title">Fully <span class="highlight">mobile</span></p>
+
+                <!-- SCREENSHOT -->
+                <div class="container" id="delightful-2">                 
+                  <div class="screenshot-container">
+                    <img style="max-width: 320px;" src="images/carousel-rh/actionwebpages2.png" />
+                  </div>
+                </div><!-- end SCREENSHOT -->
+
+                <div class="bullet-outer-container">
+                  <div class="bullet-container" style="max-width:500px">
+                    <ul class="bullet-points">
+                      <li>Easy access and use from any device with internet access</li>
+                      <li>Mobile phones, tablets, laptops & desktops</li>
+                      <li>Same simple, delightful, and effective experience on all screen sizes</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div id="readmorecollapse28" class="panel-collapse green collapse">
+                  <div class="panel-body">
+                    <p>Your employees are using their mobile phones like crazy. If you want to inspire them to better use their benefits, you must reach out to them through their mobile phones. But, you must also give them a great experience on their laptops and desktops. This poses a big challenge for your employee benefits website. Offering a website that works equally well on all screens sizes is time-consuming and expensive.</p>
+                    <p>We have solved that problem. We can provide you a fully mobile, engaging employee benefits website for less than the cost of your creating one yourself. Plus, instead of you spending weeks creating it and then many days updating it, we’ll do all the hard work with direction from you. You get the credit.</p>
+                  </div>
+                </div>
+
+                 <div class="read-more"><a data-toggle="collapse" class="btn btn-lg btn-primary" href="#readmorecollapse28" role="button">Read more!</a></div>
+
+              </div>
+
+            </div> <!--end .carousel-inner -->
+
+
+            <!--Arrows -->
+
+            <a class="left carousel-control" href="#carousel-action-webpages" data-slide="prev"><img src="images/leftarrowgrey.png" /></a>
+            <a class="right carousel-control" href="#carousel-action-webpages" data-slide="next"><img src="images/rightarrowgrey.png" /></a>
+
+          </div><!-- end CAROUSEL -->
+          
+          </div>
+        </div>
+      </div>
+      <!--end ACTION WEB PAGES -->
+
+
+      <!--WHAT'LL YOU GET-->
+      <div class="modal fade what-will-you-get" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+
+          <div class="modal-content">
+          
+          <!-- Carousel-->
+          <div id="carousel-what-will-you-get" class="carousel slide" data-interval="false">
+
+            <!--carousel top-->
+            <button type="button" class="close" data-dismiss="modal">x</button>
+            <!-- TITLE -->
+            <div class="carousel-title"><p>What'll you get</p></div>
+            <!-- Dots -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-what-will-you-get" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-what-will-you-get" data-slide-to="1"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              
+              <!--ITEM 1 -->
+              <div class="item active">
+
+                <p class="screenshot-title">Greater use and appreciation of <span class="highlight">benefits</span></p>
+
+                <!-- SCREENSHOT -->
+                <div class="container">        
+                  <div class="screenshot-container">
+                    <img src="images/carousel-rh/whatwillyouget1.jpg" />
+                  </div>          
+                </div><!-- end SCREENSHOT -->
+
+                <div class="bullet-outer-container">
+                  <div class="bullet-container">
+                    <ul class="bullet-points">
+                      <li>Employees will better understand their benefits</li>
+                      <li>They will use their benefits more often and more effectively</li>
+                      <li>They will better appreciate their benefits</li>
+                      <li>You’ll be able to attract and retain even stronger employees</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div id="readmorecollapse29" class="panel-collapse green collapse">
+                  <div class="panel-body">
+                    <p>You’ve spent a lot of time and money picking and providing employee benefits. Your primary goal is to attract, retain, and empower the strongest employees. But, as Metlife’s 2014 survey reports, 53% of employees “need more help understanding how their benefits work and how they help meet their needs” (Metlife, p.5).  The importance of employee benefits is growing:</p>
+                    <ul>
+                      <li>43% of employees agree that “Benefits are an important reason why I came to work for my employer,” up from 28% in 2012 (Metlife, p.2).</li>
+                      <li>50% agree that “Benefits are an important reason I remain with my employer,” up from 38% in 2012 (Metlife, p.2).</li>
+                    </ul>
+                    <p>Our benefits campaigns will increase your employee’s understanding, use, and appreciation of your benefits. This will materially increase your employee benefits ROI.</p>
+                  </div>
+                </div>
+                
+                <div class="read-more"><a data-toggle="collapse" class="btn btn-lg btn-primary" href="#readmorecollapse29" role="button">Read more!</a></div>
+
+              </div>
+
+              <!-- ITEM 2 -->
+              <div class="item">
+
+                <p class="screenshot-title">More time for other <span class="highlight">important tasks</span></p>
+
+                <!-- SCREENSHOT -->
+                <div class="container" id="delightful-2">                 
+                  <div class="screenshot-container">
+                    <img src="images/carousel-rh/whatwillyouget2.jpg" />
+                  </div>
+                </div><!-- end SCREENSHOT -->
+
+                <div class="bullet-outer-container">
+                  <div class="bullet-container" style="max-width:500px">
+                    <ul class="bullet-points">
+                      <li>You’ll spend far less time communicating and promoting benefits</li>
+                      <li>You’ll oversee with no heavy lifting and get the credit</li>
+                      <li>You can spend more time on tweaking your benefits strategy so it works even better</li>
+                      <li>Your supervisors will appreciate getting personalized, engaging messages</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div id="readmorecollapse30" class="panel-collapse green collapse">
+                  <div class="panel-body">
+                    <p>Most HR professionals are not trained as marketers, interactive designers, software developers, behavioral scientists, and entertainers. Many are, however, trained to relate well to employees and set the right benefits strategy. By using our employee benefits campaigns, you’ll have more time to play to your strengths, because far less time and energy will be devoted to promoting and explaining employee benefits. Instead, you can focus on other important issues.</p>
+                  </div>
+                </div>
+
+                 <div class="read-more"><a data-toggle="collapse" class="btn btn-lg btn-primary" href="#readmorecollapse30" role="button">Read more!</a></div>
+
+              </div>
+
+            </div> <!--end .carousel-inner -->
+
+
+            <!--Arrows -->
+
+            <a class="left carousel-control" href="#carousel-what-will-you-get" data-slide="prev"><img src="images/leftarrowgrey.png" /></a>
+            <a class="right carousel-control" href="#carousel-what-will-you-get" data-slide="next"><img src="images/rightarrowgrey.png" /></a>
+
+          </div><!-- end CAROUSEL -->
+          
+          </div>
+        </div>
+      </div>
+      <!--end WHAT'LL YOU GET -->
+
+
+      <!--WHAT IT IS-->
+      <div class="modal fade what-it-is" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+
+          <div class="modal-content">
+          
+          <!-- Carousel-->
+          <div id="carousel-what-it-is" class="carousel slide" data-interval="false">
+
+            <!--carousel top-->
+            <button type="button" class="close" data-dismiss="modal">x</button>
+            <!-- TITLE -->
+            <div class="carousel-title"><p>What it is</p></div>
+            <!-- Dots -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-what-it-is" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-what-it-is" data-slide-to="1"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              
+              <!--ITEM 1 -->
+              <div class="item active">
+
+                <p class="screenshot-title">Robust <span class="highlight">employee wellness</span> program + <span class="highlight">effective benefits</span> campaigns</p>
+
+                <!-- SCREENSHOT -->
+                <div class="container">        
+                  <div class="screenshot-container">
+                    <img src="images/carousel-rh/" />
+                  </div>          
+                </div><!-- end SCREENSHOT -->
+
+                <div class="bullet-outer-container">
+                  <div class="bullet-container">
+                    <ul class="bullet-points">
+                      <li>A robust employee wellness service, RapidHealth (more fully described in this part of the website)</li>
+                      <li>Effective employee benefits campaigns with action-trigger benefits pages (more fully described in this part of the website) integrated into RapidHealth</li>
+                      <li>One stream of high-quality, personalized emails for both wellness and benefits promotions so you speak with one, clear, engaging, and influential voice</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div id="readmorecollapse31" class="panel-collapse green collapse">
+                  <div class="panel-body">
+                    <p>RapidHealth + benefits is the only fully mobile software service that combines robust employee wellness with effective benefits promotion campaigns. It integrates an action-triggering employee benefits website into a powerful employee wellness service. It streamlines all your employee benefit efforts in a way that improves overall ROI while lowering costs. This frees up budget and time for other important issues.</p>
+                  </div>
+                </div>
+                
+                <div class="read-more"><a data-toggle="collapse" class="btn btn-lg btn-primary" href="#readmorecollapse31" role="button">Read more!</a></div>
+
+              </div>
+
+              <!-- ITEM 2 -->
+              <div class="item">
+
+                <p class="screenshot-title">More time for other <span class="highlight">important tasks</span></p>
+
+                <!-- SCREENSHOT -->
+                <div class="container" id="delightful-2">                 
+                  <div class="screenshot-container">
+                    <img src="images/carousel-rh/" />
+                  </div>
+                </div><!-- end SCREENSHOT -->
+
+                <div class="bullet-outer-container">
+                  <div class="bullet-container" style="max-width:500px">
+                    <ul class="bullet-points">
+                      <li>You’ll spend far less time communicating and promoting benefits</li>
+                      <li>You’ll oversee with no heavy lifting and get the credit</li>
+                      <li>You can spend more time on tweaking your benefits strategy so it works even better</li>
+                      <li>Your supervisors will appreciate getting personalized, engaging messages</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div id="readmorecollapse32" class="panel-collapse green collapse">
+                  <div class="panel-body">
+                    <p>Most HR professionals are not trained as marketers, interactive designers, software developers, behavioral scientists, and entertainers. Many are, however, trained to relate well to employees and set the right benefits strategy. By using our employee benefits campaigns, you’ll have more time to play to your strengths, because far less time and energy will be devoted to promoting and explaining employee benefits. Instead, you can focus on other important issues.</p>
+                  </div>
+                </div>
+
+                 <div class="read-more"><a data-toggle="collapse" class="btn btn-lg btn-primary" href="#readmorecollapse32" role="button">Read more!</a></div>
+
+              </div>
+
+            </div> <!--end .carousel-inner -->
+
+
+            <!--Arrows -->
+
+            <a class="left carousel-control" href="#carousel-what-it-is" data-slide="prev"><img src="images/leftarrowgrey.png" /></a>
+            <a class="right carousel-control" href="#carousel-what-it-is" data-slide="next"><img src="images/rightarrowgrey.png" /></a>
+
+          </div><!-- end CAROUSEL -->
+          
+          </div>
+        </div>
+      </div>
+      <!--end WHAT IT IS -->
+
+
+      <!--WHAT YOU'll GET-->
+      <div class="modal fade what-will-you-get2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+
+          <div class="modal-content">
+          
+          <!-- Carousel-->
+          <div id="carousel-what-will-you-get2" class="carousel slide" data-interval="false">
+
+            <!--carousel top-->
+            <button type="button" class="close" data-dismiss="modal">x</button>
+            <!-- TITLE -->
+            <div class="carousel-title"><p>What you'll get</p></div>
+            <!-- Dots -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-what-will-you-get2" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-what-will-you-get2" data-slide-to="1"></li>
+              <li data-target="#carousel-what-will-you-get2" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              
+              <!--ITEM 1 -->
+              <div class="item active">
+
+                <p class="screenshot-title">Lower <span class="highlight">health care costs</span></p>
+
+                <!-- SCREENSHOT -->
+                <div class="container">        
+                  <div class="screenshot-container">
+                    <img src="images/carousel-rh/whatyouwillget1.jpg" />
+                  </div>          
+                </div><!-- end SCREENSHOT -->
+
+                <div class="bullet-outer-container">
+                  <div class="bullet-container">
+                    <ul class="bullet-points">
+                      <li>Healthier biomarkers — blood pressure, blood glucose, cholesterol, triglycerides, and body fat – leads to  less spending on type 2 diabetes, hypertension, and heart conditions</li>
+                      <li>Relieving minor cases of anxiety and depression reduces mental health costs and increases productivity</li>
+                      <li>Preventing and relieving musculoskeletal injuries, particularly back pain, materially reduces costs</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div id="readmorecollapse33" class="panel-collapse green collapse">
+                  <div class="panel-body">
+                    <p>RapidHealth will improve your employees’ biomarkers — blood pressure, blood glucose, cholesterol, triglycerides, and body fat. This will lower your spending on type 2 diabetes and heart conditions in two ways: prevent relatively healthy employees from becoming more expensive; and reducing the costs from already unhealthy employees. Averting Type 2 diabetes in one pre-diabetic employee will save you about $8,000 annually. Preventing one employee with high cholesterol from needing bypass surgery will save you about $40,000.</p>
+                    <p>RapidHealth will relieve and prevent minor cases of anxiety and depression by getting more people physically active, improving their social health (particularly by fostering greater nurturing relationships), and enhancing their emotional health. If one employee avoids depression, you’ll save about $1,800 annually in direct medical costs and even more in increased productivity: about 85% of the cost of depression is the result of reduced productivity.</p>
+                    <p>RapidHealth will prevent and relieve some musculoskeletal injuries, particularly back pain. It will help people use a mix of self-massage and corrective movements. If one employee avoids back surgery, you’ll save about $40,000 in medical costs plus many lost work days.</p>
+                  </div>
+                </div>
+                
+                <div class="read-more"><a data-toggle="collapse" class="btn btn-lg btn-primary" href="#readmorecollapse33" role="button">Read more!</a></div>
+
+              </div>
+
+              <!-- ITEM 2 -->
+              <div class="item">
+
+                <p class="screenshot-title">Greater <span class="highlight">productivity</span></p>
+
+                <!-- SCREENSHOT -->
+                <div class="container" id="delightful-2">                 
+                  <div class="screenshot-container">
+                    <img src="images/carousel-rh/whatyouwillget2.jpg" />
+                  </div>
+                </div><!-- end SCREENSHOT -->
+
+                <div class="bullet-outer-container">
+                  <div class="bullet-container" style="max-width:500px">
+                    <ul class="bullet-points">
+                      <li>Stronger Health Cores improve productivity by giving people greater energy, boosting their immune systems, improving their mental acuity (creativity and memory), and enhancing their social, collaboration, and communication skills.</li>
+                      <li>Greater use of employee benefits improves productivity, for example, participating in a 401K prevents financial-related stress.</li>
+                      <li>Being able to attract and retain stronger employees improves productivity</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div id="readmorecollapse34" class="panel-collapse green collapse">
+                  <div class="panel-body">
+                    <p>RapidHealth will strengthen your employees’ Health Cores. This improves productivity in the following ways:</p>
+                    <ul>
+                      <li>Healthy eating is essential for physiological health, physical, and mental energy</li>
+                      <li>Physical activity is essential for physiological health, physical, and mental energy; and enhances mental acuity – i.e. creativity and memory.</li>
+                      <li>Stress reduction is essential for physiological health, physical, and mental energy; and enhances mental acuity – i.e. creativity and memory.</li>
+                      <li>Social health is essential for physiological health, physical, and mental energy; and enhances collaboration/communication skills and team work.</li>
+                      <li>Emotional health is essential for physiological health, physical, and mental energy; and enhances collaboration/communication skills and team work.</li>
+                      <li>Restful sleep is essential for physiological health, physical, and mental energy; and enhances mental acuity – i.e. creativity and memory.</li>
+                    </ul>
+                    <p>By increasing your employees’ use and appreciation of their benefits, RapidHealth will empower you to attract and retain even stronger employees. Strong, intrinsically drive</p>
+                  </div>
+                </div>
+
+                 <div class="read-more"><a data-toggle="collapse" class="btn btn-lg btn-primary" href="#readmorecollapse34" role="button">Read more!</a></div>
+
+              </div>
+
+
+              <!-- ITEM 3 -->
+              <div class="item">
+
+                <p class="screenshot-title"><span class="highlight">Greater ROI</span> from your employee benefits</p>
+
+                <!-- SCREENSHOT -->
+                <div class="container" id="delightful-2">                 
+                  <div class="screenshot-container">
+                    <img src="images/carousel-rh/whatyouwillget3.jpg" />
+                  </div>
+                </div><!-- end SCREENSHOT -->
+
+                <div class="bullet-outer-container">
+                  <div class="bullet-container" style="max-width:500px">
+                    <ul class="bullet-points">
+                      <li>Two effective services – wellness and benefits promotion – for the price of one</li>
+                      <li>Lower overall employee benefits costs</li>
+                      <li>Improve your ability to attract and retain strong employees</li>
+                      <li>More time and money for other benefit-related challenges like tweaking what benefits to provide.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div id="readmorecollapse35" class="panel-collapse green collapse">
+                  <div class="panel-body">
+                    <p>RapidHealth will strengthen your employees’ Health Cores. This improves productivity in the following ways:</p>
+                    <ul>
+                      <li>RapidHealth + Benefits provides two valuable services – employee wellness and benefits promotion – for the price of one. Using it will reduce your overall employee benefit costs, while also improving your ability to attract and retain even stronger employees. And, it will free up money and time that you can use for other important benefits-related challenges.</li>
+                      <li>Most HR professionals are not trained as marketers, interactive designers, software developers, behavioral scientists, and entertainers. Many are, however, trained to relate well to employees and set the right benefits strategy. By using our employee benefits campaigns, you’ll have more time to play to your strengths, because far less time and energy will be devoted to promoting and explaining employee benefits. Instead, you can focus on other important issues.</li>
+                    </ul>
+                    <p>By increasing your employees’ use and appreciation of their benefits, RapidHealth will empower you to attract and retain even stronger employees. Strong, intrinsically drive</p>
+                  </div>
+                </div>
+
+                 <div class="read-more"><a data-toggle="collapse" class="btn btn-lg btn-primary" href="#readmorecollapse35" role="button">Read more!</a></div>
+
+              </div>
+
+            </div> <!--end .carousel-inner -->
+
+
+            <!--Arrows -->
+
+            <a class="left carousel-control" href="#carousel-what-will-you-get2" data-slide="prev"><img src="images/leftarrowgrey.png" /></a>
+            <a class="right carousel-control" href="#carousel-what-will-you-get2" data-slide="next"><img src="images/rightarrowgrey.png" /></a>
+
+          </div><!-- end CAROUSEL -->
+          
+          </div>
+        </div>
+      </div>
+      <!--end WHAT YOU'LL GET -->
+
   </div>
   <!--end RAPIDHEALTH CAROUSELS -->
 
@@ -1084,7 +1867,7 @@
 
                 <div class="bio">
                   <div class="photo-container">
-                    <img src="images/bio-elliot.png" />
+                    <img src="images/carousel-bio/bio-elliot.png" />
                   </div>
 
                   <div class="bio-container">
@@ -1114,7 +1897,7 @@
 
                 <div class="bio">
                   <div class="photo-container">
-                    <img src="images/bio-loren.png" />
+                    <img src="images/carousel-bio/bio-loren.png" />
                   </div>
 
                   <div class="bio-container">
@@ -1145,7 +1928,7 @@
                 <div class="bio">
                     
                     <div class="photo-container">
-                      <img src="images/bio-lucas.png" />
+                      <img src="images/carousel-bio/bio-lucas.png" />
                     </div>
 
                     <div class="bio-container">
@@ -1176,7 +1959,7 @@
                 <div class="bio">
                     
                     <div class="photo-container">
-                      <img src="images/bio-paul.png" />
+                      <img src="images/carousel-bio/bio-paul.png" />
                     </div>
 
                     <div class="bio-container">
@@ -1203,7 +1986,7 @@
                 <div class="bio">
                     
                     <div class="photo-container">
-                      <img src="images/bio-pria.png" />
+                      <img src="images/carousel-bio/bio-pria.png" />
                     </div>
 
                     <div class="bio-container">
@@ -1231,7 +2014,7 @@
                 <div class="bio">
                     
                     <div class="photo-container">
-                      <img src="images/bio-cyndi.png" />
+                      <img src="images/carousel-bio/bio-cyndi.png" />
                     </div>
 
                     <div class="bio-container">
@@ -1251,7 +2034,7 @@
                 <div class="bio">
                     
                     <div class="photo-container">
-                      <img src="images/bio-adam.png" />
+                      <img src="images/carousel-bio/bio-adam.png" />
                     </div>
 
                     <div class="bio-container">
@@ -1312,7 +2095,7 @@
 
                 <div class="bio">
                   <div class="photo-container">
-                    <img src="images/bio-rob.png" />
+                    <img src="images/carousel-bio/bio-rob.png" />
                   </div>
 
                   <div class="bio-container">
@@ -1351,7 +2134,7 @@
 
                 <div class="bio">
                   <div class="photo-container">
-                    <img src="images/bio-jeff.png" />
+                    <img src="images/carousel-bio/bio-jeff.png" />
                   </div>
 
                   <div class="bio-container">
@@ -1385,7 +2168,7 @@
                 <div class="bio">
                     
                     <div class="photo-container">
-                      <img src="images/bio-kim.png" />
+                      <img src="images/carousel-bio/bio-kim.png" />
                     </div>
 
                     <div class="bio-container">
@@ -1416,7 +2199,7 @@
                 <div class="bio">
                     
                     <div class="photo-container">
-                      <img src="images/bio-deborah.png" />
+                      <img src="images/carousel-bio/bio-deborah.png" />
                     </div>
 
                     <div class="bio-container">
@@ -1485,7 +2268,7 @@
 
                 <div class="bio">
                   <div class="photo-container">
-                    <img src="images/bio-lucas.png" />
+                    <img src="images/carousel-bio/bio-lucas.png" />
                   </div>
 
                   <div class="bio-container">
@@ -1514,7 +2297,7 @@
 
                 <div class="bio">
                   <div class="photo-container">
-                    <img src="images/bio-paul.png" />
+                    <img src="images/carousel-bio/bio-paul.png" />
                   </div>
 
                   <div class="bio-container">
@@ -1544,7 +2327,7 @@
                 <div class="bio">
                     
                     <div class="photo-container">
-                      <img src="images/bio-gil.png" />
+                      <img src="images/carousel-bio/bio-gil.png" />
                     </div>
 
                     <div class="bio-container">
@@ -1574,7 +2357,7 @@
                 <div class="bio">
                     
                     <div class="photo-container">
-                      <img src="images/bio-joseph.png" />
+                      <img src="images/carousel-bio/bio-joseph.png" />
                     </div>
 
                     <div class="bio-container">
@@ -1639,7 +2422,7 @@
 
                 <div class="bio">
                   <div class="photo-container">
-                    <img src="images/bio-june.png" />
+                    <img src="images/carousel-bio/bio-june.png" />
                   </div>
 
                   <div class="bio-container">
@@ -1669,7 +2452,7 @@
                 <div class="bio">
                     
                     <div class="photo-container">
-                      <img src="images/bio-alvaro.png" />
+                      <img src="images/carousel-bio/bio-alvaro.png" />
                     </div>
 
                     <div class="bio-container">
@@ -1700,7 +2483,7 @@
 
                 <div class="bio">
                   <div class="photo-container">
-                    <img src="images/bio-esther.png" />
+                    <img src="images/carousel-bio/bio-esther.png" />
                   </div>
 
                   <div class="bio-container">
@@ -1730,7 +2513,7 @@
                 <div class="bio">
                     
                     <div class="photo-container">
-                      <img src="images/bio-danielle.png" />
+                      <img src="images/carousel-bio/bio-danielle.png" />
                     </div>
 
                     <div class="bio-container">
@@ -1761,7 +2544,7 @@
                 <div class="bio">
                     
                     <div class="photo-container">
-                      <img src="images/bio-tony.png" />
+                      <img src="images/carousel-bio/bio-tony.png" />
                     </div>
 
                     <div class="bio-container">
@@ -1807,7 +2590,7 @@
                 <div class="bio">
                     
                     <div class="photo-container">
-                      <img src="images/bio-scott.png" />
+                      <img src="images/carousel-bio/bio-scott.png" />
                     </div>
 
                     <div class="bio-container">
@@ -1844,7 +2627,7 @@
                 <div class="bio">
                     
                     <div class="photo-container">
-                      <img src="images/bio-jonathan.png" />
+                      <img src="images/carousel-bio/bio-jonathan.png" />
                     </div>
 
                     <div class="bio-container">
@@ -1918,7 +2701,7 @@
 
                 <div class="bio">
                   <div class="photo-container">
-                    <img src="images/bio-jay.png" />
+                    <img src="images/carousel-bio/bio-jay.png" />
                   </div>
 
                   <div class="bio-container">
@@ -1952,7 +2735,7 @@
                 <div class="bio">
                     
                     <div class="photo-container">
-                      <img src="images/bio-jaykingsley.png" />
+                      <img src="images/carousel-bio/bio-jaykingsley.png" />
                     </div>
 
                     <div class="bio-container">
@@ -1985,7 +2768,7 @@
 
                 <div class="bio">
                   <div class="photo-container">
-                    <img src="images/bio-sharon.png" />
+                    <img src="images/carousel-bio/bio-sharon.png" />
                   </div>
 
                   <div class="bio-container">
@@ -2004,7 +2787,7 @@
                 <div class="bio">
                     
                     <div class="photo-container">
-                      <img src="images/bio-david.png" />
+                      <img src="images/carousel-bio/bio-david.png" />
                     </div>
 
                     <div class="bio-container">
@@ -2034,7 +2817,7 @@
                 <div class="bio">
                     
                     <div class="photo-container">
-                      <img src="images/bio-elliot.png" />
+                      <img src="images/carousel-bio/bio-elliot.png" />
                     </div>
 
                     <div class="bio-container">
@@ -2168,23 +2951,6 @@
     var tailored_values = ["1"];
     createURL(tailored_values, 'tailored', '.modal');
 
-    <!-- Active state for links -->
-    $(window).scroll(function() {    
-      $(".navbar-default .navbar-nav li a.active").removeClass("active");
-      var scroll = $(window).scrollTop();
-      if (scroll < 500) {
-          
-      }
-      else if (scroll < 950) {
-          $("#link1").addClass("active");
-      }
-      else if (scroll < 1400) {
-          $("#link2").addClass("active");
-      }
-      else {
-          $("#link3").addClass("active");
-      } 
-    });
 
     $("a[data-toggle=collapse]").each(function (){
       var link = $(this);
@@ -2201,15 +2967,7 @@
         lowerThan: 'IE9'
     });
   });
-  // automatic scrolling for links
-  smoothScroll.init({
-    easing: 'easeInOutQuad',
-  });
 
-</script>
-
-<script>
-  $('.dropdown-toggle').dropdown();
 
 </script>
 
